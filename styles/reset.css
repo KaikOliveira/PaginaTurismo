@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --black: #000505;
+  --text: #23231a;
+  --background: #fafaff;
+  --gray: #9aa0a8;
+  
+  --green: #23ce6b;
+  --blue: #0D59B5;
+  --yellow: #FDCC04;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--background);
+}
+
+body, input, textarea, button {
+  font: 500 1rem sans-serif;
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: sans-serif;
+  color: var(--black);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+}

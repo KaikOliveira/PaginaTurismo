@@ -1,112 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turismo</title>
 
-  <link rel="stylesheet" type="text/css" href="./bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="./style.css" />
-  <link rel="stylesheet" type="text/css" href="./custom.css" />
-  
+  <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
 
-  <title>Document</title>
 
 </head>
 <body>
-  <div class="bread_area"> 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <ol class="breadcrumb">
-                    <li><a href="{$url}">Home</a></li>
-                    <li><a href="{$url}noticias/">Notícias</a></li>
-                    <li><a href="{$url}noticia/{$dadosNoticia.notc_link}/">{$dadosNoticia.notc_titulo}</a></li>
-                </ol>                    
-            </div>
-        </div>
-    </div>
-  </div>
-  <main class="site-main page-main">
-    <div class="container">
-        <div class="row">
-          <div class="col-md-9">
-            <h1 style="font-weight: bold; color: #313131;">{$dadosNoticia.notc_titulo}</h1>
-          </div>
-            <section class="page col-md-9">
-                <div class="entry text-justify">
-                  <div style="margin-bottom: 10px;">
-                    <i class="fa fa-calendar"></i>&nbsp;&nbsp;Data da Publicação: {$dadosNoticia.notc_data|date_format:"%d/%m/%Y"}
-                  </div>
-                  
-            <img src="{$url}uploads/{$img[0]}" alt="{$dadosNoticia.notc_titulo}" class="img-responsive">
-            <p style="margin-top: 3px"><i>* {$dadosNoticia.notc_imagem_legenda}</i></p>
-         
-                  
-                </div>
-                <div class="entry" style="margin-left: -15px; margin-top: 25px;">
-          
-            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-              <a href="{$url}uploads/{$img[0]}" rel="gallery-noticia" title="{$imgg.noti_legenda}">
-                <img src="{$url}uploads/thumbs/{$img[0]}" class="img-responsive thumbnail" />
-              </a>
-            </div>
-   
-          <div class="clearfix"></div>
-          <script type="text/javascript">
-            $(function(){
-              $("a[rel=gallery-noticia]").fancybox({
-                'transitionIn'	: 'elastic',
-                'transitionOut'	: 'elastic'
-              });
-            });
-          </script>
-        </div>
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b034edcb0623dd1"></script>
-        <div class="addthis_inline_share_toolbox"></div>
-  
-      </section>
-        </div>
-    </div>
-  </main>
-  <div class="clearfix"></div>
-  
+  <header>
+    <div class="heading">
+      <span>Prefeitura de Tamarana</span>
 
-    <section class="home-area">
-        <div class="home_content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12"><h2 class="sub_title">ÚLTIMAS NOTÍCIAS DESTE ÓRGÃO</h2></div>
-                    <div class="home_list">
-                        <ul>
-                          
-                 <li class="col-md-3 col-sm-6 col-xs-12">
-                                  <div class="thumbnail">
-                                    <a href="{$url}noticia/{$noticia.notc_link}/">
-                                        <img src="{$url}uploads/thumbs/{$img[0]}" class="img-responsive">
-                                      </a>
-                                      <div class="caption">
-                                          <h3><a href="{$url}noticia/{$noticia.notc_link}/">{$noticia.notc_titulo}</a></h3>
-                                          <a href="{$url}noticia/{$noticia.notc_link}/">
-                                            <p>{$noticia.notc_sub_titulo|strip_tags|truncate:220:".....":true}</p>
-                                          </a>
-                                      </div>
-                                  </div>                                        
-                              </li>
-             
-                        </ul>
-                    </div>
-          <div class="clearfix"></div>
-                   <div>
-                      <div class="col-sm-12">
-                        <b><a style="text-decoration: underline;"  href="{$url}noticias/">Ver Todas as Notícias</a></b>
-                      </div>
-                   </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="headingOptions">
+        <button>
+          Acesso à informação
+        </button>
+
+        <button>
+          Transparência
+        </button>
+
+        <button>
+          Serviços
+        </button>
+
+        <button>
+          Legislação
+        </button>
+      </div>
+    </div>
+  </header>
  
 </body>
 </html>
