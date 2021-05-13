@@ -1,0 +1,48 @@
+header {
+  background: var(--green);
+  height: 185px;
+}
+
+header .heading {
+  height: 33px;
+  background: #eee ;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .heading span {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.heading .headingOptions button {
+  border: none;
+  margin-left: 5px;
+  background: transparent;
+  color: var(--text);
+  font-size: 0.8rem;
+}
+
+header .headerBanner {
+  height: 100px;
+  background: var(--white);
+  margin-top: 10px;
+  padding: 10px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerBanner span {
+  color: var(--text);
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.headerBanner p {
+  color: #454545;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
