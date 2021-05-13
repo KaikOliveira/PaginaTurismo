@@ -10,11 +10,12 @@
   --text: #343434;
   --background: #fafafa;
   --gray: #9aa0a8;
-  
-  --green: #23ce6b;
+  --green: #64A9A4;  
   --blue: #0D59B5;
   --yellow: #FDCC04;
 }
+
+/* --green: #23ce6b; */
 
 @media (max-width: 1080px) {
   html {
