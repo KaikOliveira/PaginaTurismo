@@ -49,3 +49,12 @@ h2 {
 button {
   cursor: pointer;
 }
+
+main {
+  width: 100%;
+  padding: 0 20px;
+  background: var(--background);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
