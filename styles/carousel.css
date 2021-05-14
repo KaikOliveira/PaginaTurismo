@@ -1,6 +1,6 @@
 main .carousel {
   width: 100%;
-  height: 500px;
+  height: 550px;
   max-height: 600px;
   background: var(--background);
   display: flex;
@@ -16,7 +16,6 @@ main .carousel {
   display: flex;
   align-items: center;
   justify-items: center;
-  border: 1px solid saddlebrown;
 }
 
 .carouselContainer {
@@ -34,11 +33,34 @@ main .carousel {
   height: 100%;
   animation: fade 1.5s;
   display: none;
-  padding: 20px;
+  padding: 5% 10%;
   text-align: center;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.carouselImgs .carouselBottom {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.carouselImgs .carouselBottom >button {
+  background: var(--green);
+  width: 35%;
+  align-self: center;
+  height: 35%;
+  border: 2.5px solid var(--white);
+  color: var(--white);
+  transition: filter 0.2s;
+}
+
+.carouselImgs .carouselBottom >button:hover {
+  filter: brightness(0.95);
 }
 
 .prev, .next {
@@ -47,13 +69,22 @@ main .carousel {
   cursor: pointer;
   width: 50px;
   height: 50px;
-  background: wheat;
+  background: rgba(0, 0, 0, 0.10);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 15px;
   font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
 }
+
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.prev:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+} 
 
 .prev {
   left: 10px;
