@@ -85,7 +85,7 @@ main .lastNewsAndServices {
 .lastNewsAndServices .services {
   width: 24%;
   height: 100%;
-  background: chartreuse;
+  background: var(--background);
 }
 
 .services .servicesHeader {
@@ -102,4 +102,37 @@ main .lastNewsAndServices {
   font-weight: 600;
   font-size: 1.2rem;
   margin-left: 10px;
+}
+
+.services .servicesContent {
+  width: 100%;
+  height: 90%;
+  padding: 5px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.servicesContent .servicesContentItem {
+  width: 100%;
+  height: 30.5%;
+  background: url('https://turismo.fortaleza.ce.gov.br/images/banners/banner-eventos-pequeno.jpg') no-repeat center; 
+  background-color: var(--white);
+  background-size: cover;
+  display: flex;
+}
+
+.servicesContentItem .itemServiceSubtitle {
+  width: 100%;
+  height: 30%;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
+  align-self: flex-end;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.itemServiceSubtitle span {
+  color: var(--white);
 }
