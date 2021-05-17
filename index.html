@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link 
+    rel="stylesheet" 
+    href="./styles/responsive.css"
+    media="screen and (max-width: 1080px)"
+  />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Turismo</title>
 
   <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
@@ -12,42 +18,51 @@
   <link rel="stylesheet" type="text/css" href="./styles/lastnewsServices.css" />
   <link rel="stylesheet" type="text/css" href="./styles/footer.css" />
 
+  <script src="https://kit.fontawesome.com/9703f9ebe8.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
   <header>
-    <div class="heading">
-      <span>Prefeitura de Tamarana</span>
-
-      <div class="headingOptions">
-        <button>
-          Acesso à informação
-        </button>
-
-        <button>
-          Transparência
-        </button>
-
-        <button>
-          Serviços
-        </button>
-
-        <button>
-          Legislação
-        </button>
-      </div>
-    </div>
-
-    <div class="headerBanner">
-      <span>
-        Tamarana
-      </span>
-      <p>
-        Turismo
-      </p>
-    </div>
     
-    <div class="headerMenu"></div>
+      <div class="headingWrapper">
+        <div class="heading">
+          <span>Prefeitura de Tamarana</span>
+    
+          <div class="headingOptions">
+            <button>
+              Acesso à informação
+            </button>
+    
+            <button>
+              Transparência
+            </button>
+    
+            <button>
+              Serviços
+            </button>
+    
+            <button>
+              Legislação
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="headerBannerWrapper">
+        <div class="headerBanner">
+          <span>
+            Tamarana
+          </span>
+          <p>
+            Turismo
+          </p>
+        </div>
+      </div>
+      
+      <div class="headerMenuWrapper">
+        <div class="headerMenu"></div>
+      </div>
+    
   </header>
 
   <main>
@@ -90,10 +105,18 @@
               <button>Saiba mais</button>
             </div>
           </div>
-          <span class="prev" id="prev">
-            < </span>
-              <span class="next" id="next">
-                > </span>
+            <span class="prev" id="prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"></path>
+              </svg> 
+            </span>
+            <span class="next" id="next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path>
+              </svg> 
+            </span>
         </div>
       </div>
     </section>
@@ -202,22 +225,30 @@
 
 
   <footer>
-    <div class="footerCity">
-      <img src="https://tamarana.pr.gov.br/view/imagens/logo.png" alt="cidade">
-      
-      <div class="infos">
-        <span>Rua São Jose. 01 - Centro</span>
-        <span>Tamarana - PR - CEP: 11122-000</span>
-        <span>Fala Fortaleza: 0800-111-2222</span>
+    <div class="footerMain">
+      <div class="footerCity">
+        <img src="https://tamarana.pr.gov.br/view/imagens/logo.png" alt="cidade">
+        
+        <div class="infos">
+          <span>Rua São Jose. 01 - Centro</span>
+          <span>Tamarana - PR - CEP: 11122-000</span>
+          <span>Fala Fortaleza: 0800-111-2222</span>
+        </div>
       </div>
-    </div>
-
-    <div class="redesPref">
-      <span>Prefeitura nas redes sociais</span>
-      <div class="redes">
-        <span>icon</span>
-        <span>icon</span>
-        <span>icon</span>
+  
+      <div class="redesPref">
+        <span>Prefeitura nas redes sociais</span>
+        <div class="redes">
+          <div>
+            <i class="fab fa-youtube"></i>
+          </div>
+          <div>
+            <i class="fab fa-facebook-square"></i>
+          </div>
+          <div>
+            <i class="fab fa-whatsapp-square"></i>
+          </div>
+        </div>
       </div>
     </div>
   </footer>

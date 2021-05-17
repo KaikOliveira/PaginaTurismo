@@ -1,14 +1,21 @@
 footer {
   height: 135px;
+  width: 100%;
   background: var(--green);
-  margin-top: 50px;
-
   padding: 25px 35px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-footer .footerCity {
+footer .footerMain {
+  width: 100%;
+  max-width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+footer .footerMain .footerCity {
   display: flex;
 }
 
@@ -32,8 +39,9 @@ footer .footerCity {
   font-weight: 600;
 }
 
-footer .redesPref {
-  margin-right: 25px;
+footer .footerMain .redesPref {
+  margin-right: 15px;
+  width: 30%;
 }
 
 .redesPref >span {
@@ -48,9 +56,28 @@ footer .redesPref {
   margin-top: 10px;
 }
 
-.redesPref .redes span {
+.redesPref .redes div {
   width: 50px; 
   height: 50px;
-  background: var(--text);
-  border-radius: 10px;
+}
+
+.redesPref .redes div .fa-youtube {
+  color: var(--text);
+  width: 100%;
+  height: 100%;
+  font-size: 45px;
+}
+
+.redesPref .redes div .fa-whatsapp-square {
+  color: var(--text);
+  width: 100%;
+  height: 100%;
+  font-size: 45px;
+}
+
+.redesPref .redes div .fa-facebook-square {
+  color: var(--text);
+  width: 100%;
+  height: 100%;
+  font-size: 45px;
 }

@@ -10,22 +10,22 @@
   --text: #343434;
   --background: #fafafa;
   --gray: #9aa0a8;
-  --green: #1eae4e;  
+  --green: #0DAB64;  
   --blue: #0D59B5;
   --yellow: #FDCC04;
 }
 
-/* --green: #23ce6b; */
-
-@media (max-width: 1080px) {
-  html {
-    font-size: 87.5%;
-  }
-}
+/* --greens: #23ce6b;
+  --green: #1eae4e;  
+*/
 
 body {
   background: var(--background);
-  max-width: 100vw;
+  
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 body, input, textarea, button {
@@ -51,9 +51,10 @@ button {
 }
 
 main {
-  width: 100%;
+  width: 100vw;
+  max-width: 1180px;
   padding: 0 20px;
-  background: var(--background);
+  background: var(--white);
   align-items: center;
   display: flex;
   flex-direction: column;

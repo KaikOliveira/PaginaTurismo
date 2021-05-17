@@ -1,11 +1,24 @@
 header {
   background: var(--yellow);
   height: 185px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-header .heading {
+header .headingWrapper {
   height: 33px;
+  width: 100%;
   background: #eee ;
+  display: flex;
+  justify-content: center;
+}
+
+.headingWrapper .heading {
+  width: 100%;
+  max-width: 1180px;
+  height: 100%;
   padding: 0 25px;
   display: flex;
   justify-content: space-between;
@@ -25,11 +38,20 @@ header .heading span {
   font-size: 0.8rem;
 }
 
-header .headerBanner {
+header .headerBannerWrapper {
   height: 100px;
   background: var(--blue);
+  width: 100%;
+  display: flex;
+  justify-content: center;
   margin-top: 10px;
-  padding: 10px 35px;
+}
+
+.headerBannerWrapper .headerBanner {
+  width: 100%;
+  max-width: 1180px;
+  height: 100%;
+  padding: 0 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +69,16 @@ header .headerBanner {
   font-size: 1.8rem;
 }
 
-header .headerMenu {
+header .headerMenuWrapper {
   background: var(--green);
+  width: 100%;
   height: 43px;
+  display: flex;
+  justify-content: center;
+}
+
+.headerMenuWrapper .headerMenu {
+  width: 100%;
+  max-width: 1180px;
+  height: 100%;
 }

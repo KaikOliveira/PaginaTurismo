@@ -1,6 +1,5 @@
 var currentSlide = 1;
 
-
 function showSlide(slideIndex) {
   const slides = document.getElementsByClassName('carouselImgs');
   if (slideIndex > slides.length) { currentSlide = 1 }
