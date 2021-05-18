@@ -52,6 +52,7 @@ main .lastNewsAndServices {
 .theNews img {
   width: 35%;
   height: 100%;
+  border-radius: 5px;
 }
 
 .theNews .theNewsInfos {

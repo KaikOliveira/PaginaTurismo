@@ -2,7 +2,7 @@ footer {
   height: 135px;
   width: 100%;
   background: var(--green);
-  padding: 25px 35px;
+  padding: 20px 10px;
   display: flex;
   justify-content: center;
 }
@@ -40,44 +40,30 @@ footer .footerMain .footerCity {
 }
 
 footer .footerMain .redesPref {
-  margin-right: 15px;
   width: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
 .redesPref >span {
   font-weight: 600;
   text-transform: uppercase;
+  align-self: center;
 }
 
 .redesPref .redes {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
-  margin-top: 10px;
+  justify-content: space-around;
+  
 }
 
 .redesPref .redes div {
-  width: 50px; 
-  height: 50px;
-}
-
-.redesPref .redes div .fa-youtube {
-  color: var(--text);
-  width: 100%;
-  height: 100%;
+  width: 32%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 45px;
-}
-
-.redesPref .redes div .fa-whatsapp-square {
   color: var(--text);
-  width: 100%;
-  height: 100%;
-  font-size: 45px;
-}
-
-.redesPref .redes div .fa-facebook-square {
-  color: var(--text);
-  width: 100%;
-  height: 100%;
-  font-size: 45px;
+  margin-top: 10px;
 }
