@@ -42,6 +42,7 @@ main .lastNewsAndServices {
 }
 
 .lastNewsContent .theNews {
+  height: auto;
   background: var(--white);
   display: flex;
   padding: 5px 10px;
@@ -84,7 +85,7 @@ main .lastNewsAndServices {
 
 .lastNewsAndServices .services {
   width: 24%;
-  height: 100%;
+  height: auto;
 }
 
 .services .servicesHeader {
