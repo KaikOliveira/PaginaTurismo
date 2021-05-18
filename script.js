@@ -28,3 +28,19 @@ window.onload = function () {
     nextSlide();
   })
 }
+
+document.body.onresize = function() {
+  footerLogo();
+}
+
+function footerLogo() {
+  if (window.screen.width <= 576 ) {
+    document.getElementById("imgLarge").style.display= "none";
+    document.getElementById("imgSmall").style.display= "block";
+  } 
+  if (window.screen.width >= 577 ) {
+    document.getElementById("imgLarge").style.display= "block";
+    document.getElementById("imgSmall").style.display= "none";
+    
+  }
+}

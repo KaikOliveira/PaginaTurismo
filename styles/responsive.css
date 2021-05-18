@@ -145,6 +145,10 @@
     font-size: 1.6rem;
   }
 
+  main {
+    padding: 0 10px;
+  }
+
   main .carousel {
     height: 400px;
     max-height: 500px;
@@ -156,6 +160,11 @@
 
   footer .footerMain {
     padding: 0;
+  }
+
+  .footerCity img {
+    width: 80px;
+    height: 50px;
   }
 
   .infos {
@@ -172,5 +181,102 @@
 
   .redesPref .redes div {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 480px)  {
+  header .heading span {
+    font-size: 0.7rem;
+  }
+
+  .heading .headingOptions button  {
+    font-size: 0.6rem;
+  }
+
+  main .carousel {
+    height: 400px;
+    max-height: 500px;
+  }
+
+  main .lastNewsAndServices {
+    padding: 0;
+  }
+
+  .redesPref >span {
+    font-size: 0.5rem;
+  }
+
+  .redesPref .redes div  {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 417px) {
+  header .heading span {
+    display: none;
+  }
+
+  .heading .headingOptions {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .carouselImgs .carouselBottom >button{
+    width: 50%;
+  }
+
+  .carouselImgs h1 {
+    font-size: 1.6rem;
+  }
+
+  .carouselImgs .carouselBottom span {
+    font-size: 0.9rem;
+  }
+
+  .services .servicesHeader span {
+    font-size: 1rem;
+  }
+
+  .lastNews .lastNewsHeader span {
+    font-size: 1rem;
+  }
+
+  .theNewsInfos p {
+    font-size: 0.9rem;
+  }
+
+  .theNewsInfos span {
+    font-size: 0.8rem;
+  }
+
+  .footerCity img {
+    width: 60px;
+    height: 50px;
+  }
+
+  .footerCity .infos {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 337px) {
+  main .carousel {
+    height: 350px;
+    max-height: 380px;
+  }
+
+  .prev, .next {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  .infos span {
+    font-size: 0.5rem;
+  }
+
+  .redesPref >span {
+    font-size: 0.4rem;
   }
 }
